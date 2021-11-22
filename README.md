@@ -1,2 +1,35 @@
-# school_district_analysis
-Module 04 Challenge
+# **Analysis – School District Analysis**
+## **Background Breakdown**
+The Client’s (City School District; Represented by Maria) interest was fairly varied – while the major focus of the analysis revolves around standardized reading and mathematics test scores, a large portion revolves around factors such as the budget and even student population size. In our breakdown, we looked at aggregate data of fifteen schools in the district, with a total student population of over thirty-nine thousand (39,000). We looked at how the budget breaks down on a per student basis, as well as how different grade levels score.
+Our goal was to build a fairly straight-forward program which could condense the aggregate data into useful metrics – specifically the averages of aggregate scores, and an overview of funding per school.
+## **Results**
+Overall, the average math and reading scores fluctuated very little between the original data and the cleaned data.
+
+- Reading scores are higher than math scores across the district.
+- Five of the metrics changed by less than a point between the first aggregate dataset and the final product.
+- Replacing the grades for Thomas High School’s ninth grade class with NaN values has little overall effect on the math and reading scores by grade, though the trend at Thomas High School is harder to trace due to the loss of data.
+- The difference in scores from grade to grade also, unfortunately, varies from school to school – some schools see as much as a 2 point increase or decrease in either math or reading scores, while others see a tenth of a point difference.
+- Most schools see a decrease in math scores between grades, though Griffin High School sees a 2.2 point increase between ninth and tenth grade, with less than a half point deterioration in following years.
+- Interestingly, Bailey High School sees no change in reading scores between tenth, eleventh, and twelfth grade years.
+- Charter schools tend to have higher grades than District schools, though once again Thomas High School’s scores could be skewing the data slightly.
+- In terms of average scores Thomas High School is on par with its peers, though the range of average scores is between seventy-five and eight five within the district.
+- Charter schools almost unanimously have average math scores between eighty-three and eighty-four.
+- Charter schools have a higher percentage of their student’s passing math and reading (93.6% and 96.6% respectively). In comparison, there is a roughly 14 point difference between the percentage of District students passing math (66.5%) and reading (80.8%).
+- Smaller schools have higher math and reading scores than medium or large schools; the percentage of students passing, however, is fairly equal between small and medium schools, with medium sized schools eking ahead by six tenths of a point in the percentage of students passing reading.
+- The most fascinating data is the breakdown of spending ranges per student; across the board, schools which spend less than five hundred and eighty five dollars per student have higher average scores, and more students passing math, reading, or both.
+- In combination with the school size, we can see that of the four schools in this category (Cabrera, Holden, Wilson, and Wright High Schools) only one of the four is a small school (Holden, with less than four hundred and fifty students), and one is a large school (Wilson, with just under two thousand three hundred students). Both Cabrera and Wright have a student body between eighteen hundred (Wright) and one thousand eight hundred and sixty (Cabrera). All four schools are Charter schools, which has interesting implications as well.
+
+## **Summary**
+Generally, the removal of Thomas High School’s ninth grade class had a rather minor impact on the district’s data. The most obvious change was the jump in percentage of students passing math, reading, and both math and reading tests, where the first aggregate data collection set the NaN values as zero, dropping the overall passing percentages to below seventy in all three metrics.
+
+In terms of aggregate date for comparing schools by type, size, and spending per student, Thomas High School would have minimally affected the scores for Medium sized Charter schools who spent between six hundred and thirty and six hundred forty four dollars per student; their average scores in mathematics and reading were well within the range of other Charter schools (83.40 in math, 83.90 in reading; the Charter averages are 83.50 in math, and 83.90 in reading). Thomas High School placed in the middle of the highest average in reading (84.00 in four schools) and the lowest average (83.70 in one school), while it’s mathematics score is the direct middle of the group, matching both Griffon and Shelton High Schools (all of which have an 83.40 math average). The other schools have average scores of 83.10 (Cabrera), 83.30 (Wilson), 83.70 (Wright), and 83.80 (Pena and Holden).
+
+All of the Medium sized schools are Charter schools, which throws the data off a bit (in comparison, two of the Charter schools are Small sized, and one is Large. All seven of the District schools are Large sized). So while Thomas High School’s scores could skew the data one way or the other, it’s unlikely to be too much of an outlier.
+Finally, of the four schools which spend between six hundred and thirty dollars and six hundred and forty four dollars per student, Thomas High School is the only Charter school, and the only Medium sized school. The next smallest school in the category is Ford High School which, has eleven hundred more students to accommodate. However, Thomas High School does have slightly higher average scores (83.40 in math, which is 6.3 points higher than the next highest score, and 83.90 in reading, which is 2.7 points higher than the next highest score). This is the only area where Thomas High School might skew the data a bit more than anticipated, but looking at the numbers in the DataFrame can easily avoid any misinterpretation.
+
+## **Supplemental Data**
+Two bits of data which would offer more insight into the average scores and percentage of students passing:
+1) The teacher to student ratio – often times, the influence of teachers has a profound affect on students, especially their ability to learn and use information. Larger class sizes limit the amount of attention a teacher can give to a student, leading to a higher number of students struggling through material, or even giving up. Charter schools, on the whole, tend to be smaller, which usually leans to having a lower student to teacher ratio.
+
+2) After school activities – while it would be a nightmare to break down after school activities into the multitude of categories they encompass, a solid handful of activity types could give insight into things like time management, and engagement with the school community, which generally boosts a student’s scores. This also allows us to pinpoint whether activities are cutting into time better spent in other avenues, or if a specific type of activity is helping students do better.
+Image 1.1 Final Analysis minus Aggregate Summary with NaN Values
